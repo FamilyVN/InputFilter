@@ -13,6 +13,8 @@ public class CommonUtils {
 
     public static boolean checkValidInput(CharSequence charSequence) {
         charSequence = charSequence.toString().replace(" ", "");
+        charSequence = charSequence.toString().replace("-", "");
+        charSequence = charSequence.toString().replace("\n", "");
         return charSequence.toString().matches(REGEX_TEXT1)
             || charSequence.toString().matches(VALID_EXISTED.replace(" ", ""));
     }
