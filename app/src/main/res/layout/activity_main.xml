@@ -9,9 +9,10 @@
     tools:context="com.tuananh.inputfilter.MainActivity">
 
     <com.tuananh.inputfilter.EditTextCustom
+        android:id="@+id/edit_normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColor="@android:color/black"/>
 </LinearLayout>
